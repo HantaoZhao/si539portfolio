@@ -1,0 +1,221 @@
+/*body header nav ul li a{}*/
+
+body{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: #000000;
+}
+
+/*Start of Navigation part*/
+.nav_bar{
+	display: flex;
+	flex-direction: row;
+	/*justify-content: space-between;*/
+	justify-content: flex-start;
+  	list-style: none;
+  	/*font-weight: bold;*/
+
+  	/*padding: 10px;*/
+  	/*padding-bottom: 10px;*/
+
+  	margin-bottom: 2px;
+  	border-bottom: 3px solid grey;
+
+  	background-color: #111;
+}
+
+.nav_index{
+	color: black;
+	/*background-color: #4CAF50;*/
+	/*background-color: green;*/
+ 	text-decoration: none;
+
+ 	/*padding: 10px;*/
+ 	margin: 10px;
+ 	border-right: 5px black;
+}
+
+.nav_item{
+	color: black;
+ 	text-decoration: none;
+ 	align-self: right;
+
+ 	/*padding: 10px;*/
+ 	margin: 10px;
+ 	border-right: 5px;
+}
+
+header nav ul li a[href*="html"]{
+	font-family: sans-serif;
+	font-size: 2em;
+	text-decoration: none;
+	color: #888888;
+}
+
+header nav ul li a[href*="html"]:hover{
+	text-decoration: underline;
+	/*text-decoration-style: double;*/
+	background-color: #555;
+    /*color: white;*/
+}
+
+#edu header nav ul li a[href*="edu"], #course header nav ul li a[href*="course"], #index header nav ul li a[href*="index"], #intern header nav ul li a[href*="intern"]{
+	font-weight: bold;
+	font-style: italic;
+	padding: 2px 10px 2px 5px;
+/*	padding-left: 10px;
+	padding-right: 10px;*/
+	background-color: azure;
+	/*background-color: cyan;*/
+
+}
+
+/*End of Navigation Part*/
+
+/*Start of jump to content*/
+.skip{
+	background: white;
+	left: 0;
+	padding: 6px 6px 0px;
+	position: absolute;
+	top:-40px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+}
+
+.skip:focus
+{
+	top: 0;
+}
+
+* ul li p{
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+
+img{
+max-width: 800px;
+
+}
+
+#resume{
+    margin-left: auto; 
+    margin-right: auto; 
+    display:block;
+
+	border:2px solid #666;
+	border-style: dashed;
+}
+
+/*Start of Footer Part*/
+
+footer{
+	min-height: 40px;
+	position: relative;
+	font-size: 25px;
+	left:0px;
+	bottom:-20px;
+	width:100%;
+	text-align:center;
+	color: white;
+	background:black;
+}
+
+/*End of Footer Part*/
+
+/*Start of the award table*/
+#award table{
+    border-collapse: collapse;
+    margin: 20px;
+    text-align: left;
+}
+
+#award table td, #award table th{
+    border: 1px solid #cad9ea;
+    color: #666;
+    height: 30px;
+}
+
+#award table thead th{
+    background-color: #CCE8EB;
+    width: 100px;
+}
+
+#award table tr:nth-child(odd){
+    background: #fff;
+}
+
+#award table tr:nth-child(even){
+    background: #F5FAFA;
+}
+
+#award li{
+	list-style: none;
+}
+
+/*End of the award table*/
+
+/*	grid-template-columns: 500px 500px 500px 500px 500px 500px;*/
+/*	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-columns: auto auto auto;
+	grid-template-columns: repeat(6,500px);
+	grid-gap: 15px;*/
+
+/*Start of the Course Page*/
+#course .course_container div[class*="img"]{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+
+}
+
+#course .course_container img{
+	/*flex-wrap: nowrap;*/
+	max-width: 300px;
+	padding: 10px;
+	margin: 10px;
+
+	border:2px solid #666;
+	border-style: dashed;
+
+	/*background-color:#ff9900;*/
+	-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+	box-shadow: 10px 10px 5px #888888;
+	transition: 1s;
+}
+
+#course .course_container img:hover{
+	/*opacity: 0;*/
+	max-width: 500px;
+
+}
+
+/*End of the Course Page
+
+/*#course .course_container ul ._505_text *{
+	grid-row: 1/ span 1;
+}
+
+#course .course_container ul ._505_img img{
+	grid-row: 2/ 3;
+
+}
+
+#course .course_container ul ._505_img #_505_1{
+	grid-column: 1/ 2;
+}
+
+#course .course_container ul ._505_img #_505_2{
+	grid-column: 2/ 3;
+}
+
+#course .course_container ul ._505_img #_505_3{
+	grid-column: 3/ 4;
+}*/
+

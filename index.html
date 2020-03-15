@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160617051-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160617051-1');
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -22,13 +32,15 @@
 
 <main id="skip">
 <h1> Personal Information </h1>
-<section>
+<div class="index_container">
+
+<section class="index_edu">
 	<h2> My Education </h2>
 	<p> I am a Master of Scicence in Information Student at University of Michigan, School of Information. I'm currently choosing Data Science as my track. </p>
 	<p> Meanwhile, I am a Bachelor of Science in Electrical and Computer Engineering at Shanghai Jiao Tong University, UM-SJTU Joint Institute. </p>
 </section>
 
-<section>
+<section class="index_skill">
 	<h2> My Skills </h2>
 	<ul>
 		<li> <strong>Programming: </strong> 
@@ -40,7 +52,7 @@
 	</ul>
 </section>
 
-<section id="award">
+<section class="index_award" id="award">
 	<h2> My Awards </h2>
 	<table>
 		<caption></caption>
@@ -55,37 +67,33 @@
 				<td> "Three Goods" Merit Student of Shanghai Jiao Tong University </td>
 			</tr><tr>
 				<td> 2018 </td>
-				<td> <ul>
+				<td><ul>
 				<li>Undergraduate's scholarship for academic progress</li>
 				<li>Undergraduate's scholarship for academic excellence (Type C)</li>
 				<li>JI Volunteer Spirit Scholarship of UM-SJTU Joint Institute</li>
-			</ul> </td>
+			</ul></td>
 			</tr><tr>
 				<td> 2019 </td>
 				<td> Undergraduate's scholarship for academic excellence (Type C) </td>
 			</tr>
-
-
 	</table>
-
 </section>
 
-
-<section>
+<section class="index_resume">
 	<h2> My Resume </h2>
 	<img src="images/Resume.jpg"  alt="a screenshot of my Resume" id="resume" />
-
 </section>
 
-<section>
+<section class="index_hobbies">
 	<h2> My Hobbies </h2>
-
 	<p> In my leisure time, I enjoy watching documentary videos on Youtube. It's exciting to learn more about the world, isn't it? The 
 	splendid natural sceneries are so breathtaking, and the baby animals are so cute. </p>
 	<p> I've been playing Go since childhood, and reached 1d. Go is an ancient board game orginatecd in China, and I guess you know about AlphaGo. </p>
 	<p> Sometimes I play video games as well, such as StarCraft 2. </p>
 </section>
 
+
+</div>
 </main>
 
 <footer>

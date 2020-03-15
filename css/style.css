@@ -1,13 +1,67 @@
-/*body header nav ul li a{}*/
-
+/*Macro Settings*/
 body{
 	margin: 0;
 	padding: 0;
 	line-height: 1.5em;
 	font-family: "Times New Roman", Times, serif;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 	font-size: 20px;
+	/*text-rendering: optimizeLegibility;*/
 	color: #000000;
+	background-color: #f1f1f1;
 }
+
+* ul li p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+img{
+	max-width: 800px;
+}
+
+p{
+	padding: 0 60px;
+/*	line-height: 1.5;
+	text-align: left;*/
+}
+
+h1{
+	padding: 0 20px;
+
+    color: #2c2c2c;
+    /*background-color: #d5d5d5;*/
+    letter-spacing: .05em;
+    text-shadow: 
+		4px 4px 0px #d5d5d5, 
+	  	7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+	padding: 0 40px;
+
+
+    color: #2c2c2c;
+    /*background-color: #d5d5d5;*/
+    letter-spacing: .05em;
+    text-shadow: 
+		4px 4px 0px #d5d5d5, 
+	  	7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+	padding: 0 40px;
+	font-style: italic;
+
+	    color: #2c2c2c;
+    /*background-color: #d5d5d5;*/
+    letter-spacing: .05em;
+    text-shadow: 
+		4px 4px 0px #d5d5d5, 
+	  	7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*SHARED ATTRIBUTES*/
 
 /*Start of Navigation part*/
 .nav_bar{
@@ -87,30 +141,10 @@ header nav ul li a[href*="html"]:hover{
 	z-index: 1;
 }
 
-.skip:focus
-{
+.skip:focus{
 	top: 0;
 }
-
-* ul li p{
-	margin-left: 20px;
-	margin-right: 20px;
-	
-}
-
-img{
-max-width: 800px;
-
-}
-
-#resume{
-    margin-left: auto; 
-    margin-right: auto; 
-    display:block;
-
-	border:2px solid #666;
-	border-style: dashed;
-}
+/*End of jump to content*/
 
 /*Start of Footer Part*/
 
@@ -124,9 +158,115 @@ footer{
 	text-align:center;
 	color: white;
 	background:black;
+
+
+    color: #e0dfdc;
+    background-color: #333;
+    letter-spacing: .1em;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #2e2e2e, 
+      0 2px 0 #2c2c2c, 
+      0 3px 0 #2a2a2a, 
+      0 4px 0 #282828, 
+      0 5px 0 #262626, 
+      0 6px 0 #242424, 
+      0 7px 0 #222, 
+      0 8px 0 #202020, 
+      0 9px 0 #1e1e1e, 
+      0 10px 0 #1c1c1c, 
+      0 11px 0 #1a1a1a, 
+      0 12px 0 #181818, 
+      0 13px 0 #161616, 
+      0 14px 0 #141414, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
 /*End of Footer Part*/
+
+
+/**/
+/**/
+/**/
+/**/
+/*END OF SHARED ATTRIBUTES*/
+/**/
+/**/
+/**/
+/**/
+
+/*Start of index page*/
+.index_container{
+	display: grid;
+	grid-template-rows: repeat(6,auto);
+	grid-template-columns: auto auto;
+	grid-gap: 30px;
+}
+
+.index_container li{
+	list-style: none;
+	padding: 0 60px;
+}
+
+.index_container table li{
+	padding: 0px;
+}
+
+.index_container .index_resume{
+	grid-row: 1/-1;
+	grid-column: 1/2;
+}
+
+.index_container .index_resume img{
+	max-width: 900px;
+}
+
+.index_container .index_edu{
+	grid-row: 1/2;
+	grid-column: 2/-1;
+}
+
+.index_container .index_skill{
+	grid-row: 2/3;
+	grid-column: 2/-1;
+}
+
+.index_container .index_award{
+	grid-row: 3/4;
+	grid-column: 2/-1;
+}
+
+.index_container .index_hobbies{
+	grid-row: 4/5;
+	grid-column: 2/-1;
+}
+
+
+/*Start of resume*/
+
+#resume{
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+
+	border:2px solid #666;
+	border-style: dashed;
+
+	min-width: 600px;
+
+	padding: 20px;
+	margin: 20px;
+
+	border:2px solid #666;
+	border-style: dashed;
+
+	/*background-color:#ff9900;*/
+	-moz-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+/*End of resume*/
 
 /*Start of the award table*/
 #award table{
@@ -160,11 +300,7 @@ footer{
 
 /*End of the award table*/
 
-/*	grid-template-columns: 500px 500px 500px 500px 500px 500px;*/
-/*	grid-template-rows: auto auto auto auto auto auto;
-	grid-template-columns: auto auto auto;
-	grid-template-columns: repeat(6,500px);
-	grid-gap: 15px;*/
+/*End of index page*/
 
 /*Start of the Course Page*/
 #course .course_container div[class*="img"]{
@@ -185,7 +321,7 @@ footer{
 	border-style: dashed;
 
 	/*background-color:#ff9900;*/
-	-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+	-moz-box-shadow: 10px 10px 5px #888888;
 	box-shadow: 10px 10px 5px #888888;
 	transition: 1s;
 }
@@ -196,26 +332,66 @@ footer{
 
 }
 
-/*End of the Course Page
+/*End of the Course Page*/
 
-/*#course .course_container ul ._505_text *{
-	grid-row: 1/ span 1;
+/*Start of the edu page*/
+#edu_container{
+	display: grid;
+	/*grid-template-rows: 500px 500px 500px 500px 500px 500px;*/
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-columns: 200px auto auto auto auto 200px;
+	/*grid-template-columns: repeat(6,500px);*/
+	grid-gap: 30px;
+
 }
 
-#course .course_container ul ._505_img img{
-	grid-row: 2/ 3;
-
+#edu_container h1{
+	grid-row: 1/2;
+	grid-column: 2/-1;
 }
 
-#course .course_container ul ._505_img #_505_1{
-	grid-column: 1/ 2;
+#edu_container #ji_logo{
+	grid-row: 2/span 1;
+	grid-column: 2/3;
 }
 
-#course .course_container ul ._505_img #_505_2{
-	grid-column: 2/ 3;
+#edu_container *[id*="logo"]{
+	max-width: 400px;
 }
 
-#course .course_container ul ._505_img #_505_3{
-	grid-column: 3/ 4;
-}*/
+#edu_container #underg{
+	grid-row: 2/span 1;
+	grid-column: 3/6;
+}
 
+#edu_container #UMSI_logo{
+	grid-row: 3/span 1;
+	grid-column: 2/3;
+}
+
+#edu_container #g{
+	grid-row: 3/span 1;
+	grid-column: 3/6;
+}
+
+#edu_container #SJTU_intro{
+	grid-row: 4/span 1;
+	grid-column: 2/-2;
+}
+
+#edu_container #exchange{
+	grid-row: 5/span 2;
+	grid-column: 2/5;
+}
+
+#edu_container #UM_logo{
+	grid-row: 5/span 1;
+	grid-column: -3/-2;
+}
+
+#edu_container #SJTU_emblem{
+	grid-row: 6/span 1;
+	grid-column: -3/-2;
+}
+
+/*End of the edu Page*/
